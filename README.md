@@ -8,7 +8,7 @@
 - (And may break at any time!)
 ```
 
-This is a monkeypatch that forces Gradio to serve base64 image URIs (rather than saving files to a temporary directory to host them) when serving an image gallery from PIL data sources (likely incidentally working with other Gradio projects that feed PIL images to an output gallery; however string-based and numpy images currently retain the original behaviour so your mileage may vary).
+This is a monkeypatch that forces Gradio to serve base64 image URIs (rather than saving files to a temporary directory to host them) when serving an image gallery from PIL data sources (likely incidentally working with other Gradio projects that feed images to an output gallery; the implementation is not robust and your mileage may vary).
 
 > __Note__
 > When running this script as an extension in Stable Diffusion Webgui, you will need to restart the program after disabling this script for the disabling to take effect.
